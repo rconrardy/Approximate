@@ -13,11 +13,7 @@ class Task:
         self.actual_time = None
         self.approx_time = None
 
-    def add_category(self, name):
-        """Add a category to a task."""
-        category.setup(name)
-
 
 def setup(name, code):
-    """Set up a tasks"""
+    """Set up a task"""
     return Task(name, code)

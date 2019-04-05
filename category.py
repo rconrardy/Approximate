@@ -3,10 +3,10 @@ import database
 class Category:
     """Hold information about a category."""
 
-    def __init__(self, name):
+    def __init__(self, name, code):
         """Initialize a new category."""
-        self.id = {"name": "", "code": ""}
+        self.id = {"name": name, "code": code}
 
-def setup(name):
-    print("NEW CATEGORY:", name)
-    return Category(name)
+def setup(name, code):
+    """Set up a category"""
+    return Category(name, code)
